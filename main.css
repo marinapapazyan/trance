@@ -1071,11 +1071,11 @@ font-family: 'Gotu Regular', sans-serif;
 
 #sub {
 	display: none;
+	height: 100%;
 }
 
 #menu {
-	height: 65px;
-	top: -2px;
+	top: 0px;
 	width: 105%;
 	overflow: hidden;
 	position: fixed;
@@ -1099,7 +1099,7 @@ font-family: 'Gotu Regular', sans-serif;
 	display: inline;
 	position: fixed;
 	right: 20px;
-	top: 17px;
+	top: 14px;
 	z-index: 3;
 }
 
@@ -1113,8 +1113,8 @@ a {
 
 #logo {
 	position: fixed;
-	left: 15px;
-	top: 12.5px;
+	left: 10px;
+	top: 10px;
 	height: 45px;
 	z-index: 3;
 }
