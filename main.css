@@ -1074,9 +1074,11 @@ font-family: 'Gotu Regular', sans-serif;
 }
 	
 #sub {
-	padding-top: 50px;
+	top: 50px;
+	right: 0px;
 	position: fixed;
 	width: 100%;
+	height: auto;
 	background-color: white;
 	border: 1px;
 	z-index: 2;
