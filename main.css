@@ -1,0 +1,1466 @@
+@charset "utf-8";
+
+/* FONTS */
+
+@font-face {
+font-family: 'Gotu Regular';
+font-style: normal;
+font-weight: normal;
+font-display: fallback;
+src: local('Gotu Regular'), url('font/Gotu.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 200;
+font-display: fallback;
+src: local('Roboto Light'), url('font/Roboto-Light.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-display: fallback;
+src: local('Roboto Regular'), url('font/Roboto-Regular.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Martel Sans';
+font-style: normal;
+font-weight: 200;
+font-display: fallback;
+src: local('Martel Sans ExtraLight'), url('font/MartelSans-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Martel Sans';
+font-style: normal;
+font-weight: 300;
+font-display: fallback;
+src: local('Martel Sans Regular'), url('font/MartelSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'Raleway';
+font-style: normal;
+font-weight: 500;
+font-display: fallback;
+src: local('Raleway Medium'), url('font/Raleway-Medium.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'IBM Plex Serif';
+font-style: normal;
+font-weight: 700;
+font-display: fallback;
+src: local('IBM Plex Serif Bold'), url('font/IBMPlexSerif-Bold.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'IBM Plex Serif';
+font-style: normal;
+font-weight: 500;
+font-display: fallback;
+src: local('IBM Plex Serif Medium'), url('font/IBMPlexSerif-Medium.ttf') format('truetype');
+}
+
+@font-face {
+font-family: 'IBM Plex Serif';
+font-style: normal;
+font-weight: 300;
+font-display: fallback;
+src: local('IBM Plex Serif Regular'), url('font/IBMPlexSerif-Regular.ttf') format('truetype');
+}
+
+/* GENERAL */
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+	-ms-text-size-adjust: 100%;
+	-ms-overflow-style: scrollbar;
+}
+
+@-ms-viewport {
+	width: device-width;
+}
+
+body {
+	margin: 0;
+	color: #000;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+	width: 99.9999999%;
+	background-color: #fff;
+	font-family: 'Shapiro 35 Feather Text',  Helvetica;
+	color: black;
+	overflow-x: hidden;
+}
+
+footer {
+	position: relative;
+	top: 90px;
+	width: 100%;
+	text-align: center;
+	font-family: 'Martel Sans', sans-serif;
+	font-weight: 200;
+}
+
+.foot {
+	width: 100%;
+	text-align: center;
+	font-family: 'Martel Sans', sans-serif;
+	font-weight: 200;
+	background-color: #e7e7ef;
+	height: 55px;
+	position: relative;
+	top: -10px;
+	height: 35px;
+}
+
+/* DESKTOP MENU */
+
+
+#menu {
+	height: 57px;
+	width: 102%;
+	overflow: hidden;
+	position: fixed;
+	background-color: white;
+    z-index: 1;
+	left: 0px;	
+	box-shadow: -5px 10px 10px white;
+}
+
+#menu a {
+	font-family: 'Gotu Regular', sans-serif;
+	color: black;
+	font-size: 18px;
+}
+
+.index {
+	text-align: left;
+	left: 0px;	
+	background-color: #e7e7ef;
+}
+
+#logo {
+	position: fixed;
+	display: inline-block;
+	top: 5px;
+	left: 10px;
+	height: 55px;
+}
+
+#index-sub {
+	height: 32px;
+	position: fixed;
+	left: 0px;
+	width: 100%;
+	z-index: 2;
+}
+
+#index-sub a {
+	position: relative;
+	top: 19px;
+	left: 270px;
+	padding-right: 30px;
+	display: inline-block;
+}
+
+.fa {
+	display: none;
+}
+
+.inactive {
+	text-decoration: none;
+}
+
+#active {
+	text-decoration: none;
+	text-shadow: 2px 2px 30px #1f1f1f;
+}
+
+.active:hover {
+	text-shadow: 2px 2px 30px #1f1f1f;
+}
+
+.inactive:hover {
+	text-shadow: 2px 2px 30px #1f1f1f;
+}
+
+/* MAIN */
+
+.index {
+	position: absolute;
+	margin-top: 50px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+}
+
+.index h1 {
+	line-height: 1;
+	font-size: 20px;
+	text-align: center;
+	font-family: 'Gotu Regular', sans-serif;
+}
+
+.update {
+	padding-left: 0px;
+	width: 300px;
+	height: auto;
+	padding-left: 75px;
+		padding-right: 50px;
+		padding-top: 0px;
+		margin-top: -20px;
+}
+
+.update p {
+	padding-top: 0px;
+}
+
+.update h2, .mobile-update h2 {
+	line-height:1.5;
+	font-size: 25px;
+}
+
+.update text, .mobile-update text {
+	font-family: 'Gotu Regular', sans-serif;
+	font-size: 35px;
+	line-height: 0.8;
+}
+
+.update a, .mobile-update a {
+	color: black;
+	text-decoration: none;
+}
+
+.update a:hover {
+	text-decoration: underline;
+}
+
+.index-to-issue {
+	margin-top: 115px;
+	margin-left: 0px;
+	padding-right: 200px;
+}
+
+.mobile-update {
+	display: none;
+	background-color: transparent;
+}
+
+.carousel {
+	background-color: #e7e7ef;
+	box-shadow: 0 0 10px 15px #e7e7ef;
+	height:470px;
+	position: absolute;
+	top: 20px;
+}
+
+.issue .carousel {
+	height: 455px;
+}
+
+.last {
+	padding-right: 90px;
+}
+
+/* normal */
+.carousel-cell {
+display: block;
+padding-top: 50px;
+height: 350px;
+width: auto;
+padding-left: 40px;
+}
+
+.carousel.is-fullscreen .carousel-image {
+  height: auto;
+  max-height: 100%;
+}
+
+/* fullscreen */
+.carousel.is-fullscreen .carousel-cell {
+  height: 90%!important;
+}
+
+.container-intro {
+	margin-top: 0px;
+	position: relative;
+	height: auto;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 0px;
+	background-color: white;
+		box-shadow: 0 0 10px 15px white;
+	padding-bottom: 65px;
+}
+
+.container-intro p {
+	font-family: 'IBM Plex Serif';
+	font-weight: 700;
+	font-size: 30px;
+	padding-top: 37px;
+	padding-right: 5%;
+	padding-left: 5%;
+	line-height: 1.5;
+}
+
+.container-intro a {
+	padding-top: -50px;
+	line-height: 1;
+	color: black;
+	text-decoration: none;
+	font-family: 'Raleway', sans-serif;
+	font-size: 17px;
+	font-weight: 300;
+	
+}
+
+.container-intro a:hover {
+	text-shadow: 2px 5px 50px black;
+	text-decoration: underline;
+}
+
+.container {
+	margin-top: -5px;
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-right: auto;
+	margin-left: auto;
+	box-shadow: 0 0 10px 15px #e7e7ef;
+}	
+
+.container img {
+	width: 100%;
+	height: auto;
+}
+
+.container a {
+	color: black;
+	text-decoration: none;
+}
+
+.circle-1 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px; 
+	position: absolute;
+    top: 15%;
+    right: 7%;
+	box-shadow: 0px 0px 50px yellow;
+	background-color: #f8f8f8;
+  }
+  
+  .circle-2 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px; 
+	position: absolute;
+    top: 15%;
+    right: 7%;
+	box-shadow: 0px 0px 50px blue;
+	background-color: #f8f8f8;
+  }
+  
+   .circle-3 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px; 
+	position: absolute;
+    top: 15%;
+    right: 7%;
+	box-shadow: 0px 0px 50px red;
+	background-color: #f8f8f8;
+  }
+  
+    .circle-4 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px; 
+	position: absolute;
+    top: 15%;
+    right: 7%;
+	box-shadow: 0px 0px 50px green;
+	background-color: #f8f8f8;
+  }
+  
+     .circle-5 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px; 
+	position: absolute;
+    top: 15%;
+    right: 7%;
+	box-shadow: 0px 0px 50px purple;
+	background-color: #f8f8f8;
+  }
+  
+      .circle-6 {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px; 
+	position: absolute;
+    top: 15%;
+    right: 7%;
+	box-shadow: 0px 0px 50px orange;
+	background-color: #f8f8f8;
+  }
+
+.circle-1 a:hover {
+  text-shadow: 0px 0px 20px yellow;
+}
+
+.circle-2 a:hover {
+  text-shadow: 0px 0px 20px blue;
+}
+
+.circle-3 a:hover {
+  text-shadow: 0px 0px 20px red;
+}
+
+.circle-4 a:hover {
+  text-shadow: 0px 0px 20px green;
+}
+
+.circle-5 a:hover {
+  text-shadow: 0px 0px 20px purple;
+}
+
+.circle-6 a:hover {
+  text-shadow: 0px 0px 20px orange;
+}
+
+/* ABOUT */
+
+.about {
+	position: absolute;
+	top: 100px;
+	width: 100%;
+	padding-bottom: 100px;
+}
+
+.about p {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	text-align: center;
+	font-family: 'IBM Plex Serif';
+	font-weight: 700;
+	font-size: 30px;
+	padding-right: 5%;
+	padding-left: 5%;
+	line-height: 1.2;
+}
+
+.about text {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	text-align: center;
+	font-family: 'IBM Plex Serif';
+	font-weight: 400;
+	font-size: 20px;
+	padding-right: 5%;
+	padding-left: 5%;
+	line-height: 1.2;
+}
+
+.about a {
+	color: black;
+}
+
+/* ARCHIVE */
+
+.archive {
+  background-image: url("img/archive-background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.content {
+    top: 150px;
+	position: relative;
+	height: 100%;
+	width: 1041px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 100px;
+}
+
+.box {
+	display: inline-table;
+	position: relative;
+	padding-right: 46px;
+	padding-left: 46px;
+	padding-bottom: 35px;
+	width: 250px;
+	height: 350px;
+	opacity: 1;
+	text-decoration: none;
+	color: black;
+	border-width: 0px;	
+}
+
+.box a {
+	color: black;
+}
+
+
+.box h1 {
+	font-size: 20px;
+	text-align: center;
+	line-height: 1.3;
+	font-family: 'Gotu Regular', sans-serif;
+	margin-bottom: -2px;
+	
+}
+
+.box h2, .index h2 {
+	font-family: 'Martel Sans', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	font-weight: 200;
+	margin-bottom: -10px;
+}
+
+.box p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	text-align: justify;
+	line-height: 1.5;
+	font-weight: 200;
+}
+
+.box h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	text-align: center;
+	line-height: 2;
+	font-weight: 200;
+}
+
+/*.box:hover {
+	border: 1px solid;
+  border-image-source: linear-gradient(-90deg, rgb(128, 128, 128), rgb(255, 255, 255));
+  border-image-slice: 1;
+}*/
+
+.box a:hover {
+	text-shadow: 2px 5px 50px black;
+	color: black;
+}
+
+.box h3:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+/* SHOP */
+
+.shop {
+    top: 90px;
+	position: relative;
+	display: block;
+	width: 605px;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 100px;
+}
+
+.shop-box {
+	padding-top: 20%;
+	display: inline-table;
+	position: relative;
+	width: 300px;
+	opacity: 1;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+
+.shop a {
+	color: black;
+}
+
+.shop .mail:hover {
+	text-shadow: 2px 2px 15px gray;
+}
+
+.shop-notice {
+	position: fixed;
+	width: inherit;
+	text-align: center;
+	z-index: 1;
+	font-family: 'IBM Plex Serif';
+	font-weight: 300;
+	font-size: 19px;
+	line-height: 1.3;
+}
+
+.shop-cover {
+	width: auto;
+	height: 250px;
+	margin: auto;
+	box-shadow: 5px 5px 10px #d9d9d9;
+}
+
+.shop-box h1 {
+	font-size: 20px;
+	text-align: center;
+	line-height: 0.5;
+	font-family: 'Gotu Regular', sans-serif;
+}
+
+.shop-box h2 {
+	font-family: 'Martel Sans', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	font-weight: 200;
+}
+
+.shop-box p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	text-align: left;
+	padding-right: 80px;
+	padding-left: 80px;
+	padding-bottom: 80px;
+	line-height: 1.5;
+		font-weight: 200;
+}
+
+.shop-box h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	line-height: 1;
+	font-weight: 200;
+}
+
+/*
+
+.paypal {
+	font-size: 15px;
+	text-decoration: none;
+	font-family: 'Roboto', sans-serif;
+	text-align: center;
+	line-height: 2;
+	font-weight: 200;
+}
+
+.paypal-button {
+	margin-top: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 90px;
+	height: 30px;
+	border: solid;
+	border-width: 1px;
+}
+
+.paypal-button:hover {
+	background-color: black;
+}
+
+.paypal-button:hover a {
+	color: white;
+}
+
+.shop-box a:hover {
+	text-shadow: 2px 5px 50px black;
+}
+
+.shop-box h3:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+*/
+
+/* ISSUES & OPEN CALL */
+
+.printed {
+    top: 100px;
+	position: relative;
+	display: block;
+	width: 932px;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 100px;
+}
+
+.printed-box {
+	display: inline-table;
+	position: relative;
+	width: 49.5%;
+	opacity: 1;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+
+.printed-box a {
+	color: black;
+}
+
+.printed-box .mail:hover {
+	text-shadow: 2px 2px 15px gray;
+}
+
+.cover {
+	width: auto;
+	height: 400px;
+	margin: auto;
+	box-shadow: 5px 5px 10px #d9d9d9;
+}
+
+.cover:hover {
+	transform: rotate(-5deg);
+}
+
+.printed-box h1 {
+	font-size: 20px;
+	text-align: center;
+	line-height: 1.3;
+	font-family: 'Gotu Regular', sans-serif;
+	
+}
+
+.printed-box h2 {
+	font-family: 'Martel Sans', sans-serif;
+	font-size: 17px;
+	text-align: center;
+	font-weight: 200;
+}
+
+.printed-box p {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	text-align: left;
+	padding-right: 80px;
+	padding-left: 80px;
+	padding-bottom: 80px;
+	line-height: 1.5;
+		font-weight: 200;
+}
+
+.opencall {
+	filter: grayscale(100%);
+	width: 80%;
+	margin: auto;
+	margin-top: 20px;
+}
+
+#issue-3 .opencall {
+	max-width: 800px;
+}
+
+#yummies .opencall {
+	max-width: 400px;
+}
+
+.opencall:hover {
+	filter: grayscale(0%);
+}
+.call {
+    top: 100px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 100px;
+}
+
+.call-box {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	width: 80%;
+	opacity: 1;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.call-box a {
+	color: black;
+}
+
+.call-box .mail:hover {
+	text-shadow: 2px 2px 15px gray;
+}
+
+.call-box h2 {
+	font-family: 'Gotu Regular';
+	font-size: 30px;
+}
+
+.call-box p {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 80%;
+	text-align: center;
+	font-family: 'IBM Plex Serif';
+	font-weight: 300;
+	font-size: 22px;
+	padding-right: 5%;
+	padding-left: 5%;
+	line-height: 1.3;
+}
+
+.issue-info {
+	background-color: white;
+	text-align: left;
+	padding-bottom: 100px;
+	width: 90%;
+	position: relative;
+	top: 80px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.editor h2 {
+	text-align: left;
+	padding-bottom: 5px;
+}
+
+hr {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.editor .column {
+	width: 33%;
+	display: inline-table;
+}
+
+.issue-info text {
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	font-size: 16px;
+	text-align: left;
+	line-height: 1.5;
+}
+
+.issue-info h2 {
+	font-size: 18px;
+font-family: 'Gotu Regular', sans-serif;
+}
+
+.issue-info-content {
+	width: 100%;
+	background-color: white;
+	position: absolute;
+	z-index: -1;
+	height: 100%;
+}
+
+.issue-info-content div {
+		overflow: hidden;
+}
+
+
+.issue p {
+	text-align: center;
+	padding-bottom: 10px;
+}
+
+.printed-box h3 {
+	font-family: 'Roboto', sans-serif;
+	font-size: 13px;
+	text-align: center;
+	line-height: 2;
+	font-weight: 200;
+}
+
+.printed-box a:hover {
+	text-shadow: 2px 5px 50px black;
+	color: black;
+}
+
+.printed-box h3:hover {
+	text-decoration: underline;
+	color: black;
+}
+
+/* TEXTS */
+
+.text {
+	top: 100px;
+	position: absolute;
+	width: 48%;
+	height: auto;
+	left: 15%;
+	overflow: hidden;
+}
+
+.text h1 {
+	line-height: 1;
+	font-size: 70px;
+	font-family: 'Gotu Regular', sans-serif;
+	line-height: 1;
+	margin-top: -20px;
+}
+
+.text h3 {
+	margin-top: -50px;
+	font-size: 40px;
+	font-family: 'Gotu Regular', sans-serif;
+}
+
+.text h2 {
+	font-family: 'Martel Sans', sans-serif;
+	font-size: 40px;
+	font-weight: 200;
+	line-height: 1;
+}
+
+.text p {
+	margin-top: -30px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	font-size: 17px;
+	font-weight: 200;
+	line-height: 2;
+	text-align: left;
+}
+
+.text a {
+	color: black;
+}
+
+.pdf-link {
+	font-family: 'Gotu Regular';
+	font-size: 18px;
+}
+
+.text .foot {
+	position: relative;
+	top: 90px;
+	text-align: left;
+	background-color: white;
+	width: 60%;
+	padding-bottom: 0px;
+}
+
+.circle-pdf {
+	border-radius: 50%;
+    width: 150px;
+    height: 150px; 
+	position: fixed;
+    top: 15%;
+    right: 7%;
+	box-shadow: 0px 0px 15px green;
+	background-color: white;
+	text-align: center;
+}
+
+.circle-pdf:hover {
+	text-shadow: 0px 0px 20px green;
+}
+
+.circle-pdf h1, .circle-pdf-pink h1 {
+	position: absolute;
+	top: 28px;
+	left: 33px;
+	color: black;
+	text-decoration: none;
+	font-size: 25px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	transform: rotate(10deg);
+	line-height: 1.2;
+}
+
+.circle-pdf a, .circle-pdf-pink a {
+	text-decoration: none;
+}
+
+.circle-pdf-pink {
+	border-radius: 50%;
+    width: 150px;
+    height: 150px; 
+	position: fixed;
+    top: 15%;
+    right: 7%;
+	box-shadow: 0px 0px 15px #FF69B4;
+	background-color: white;
+	text-align: center;
+}
+
+.circle-pdf-pink:hover {
+	text-shadow: 0px 0px 20px #FF69B4;
+}
+
+#the-skin {
+	width: 365px;
+	text-align: justify;
+}
+
+@media screen and (max-width: 1050px) {
+
+/* ONLINE FEATURES / TWO COLUMN */
+
+.content {
+    top: 100px;
+	position: relative;
+	height: 100%;
+	width: 693px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+/* ISSUE PAGES EDITORS' NOTE */
+
+
+.editor .column {
+	width: 100%;
+	padding-top: 20px;
+}
+
+.editor hr {
+	display: none;
+}
+
+/* ISSUES ONE COLUMN */
+
+.printed {
+	width: 100%;
+}
+
+.printed-box {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	left: 0%;
+	padding-top: 0px;
+	padding-bottom: 50px;
+}
+	
+}
+
+@media screen and (max-width: 1130px) {
+
+/* MOBILE MENU */
+
+#sub {
+	display: none;
+}
+
+#menu {
+	height: 65px;
+	top: -2px;
+	width: 105%;
+	overflow: hidden;
+	position: fixed;
+	background-color: white;
+    z-index: 2;
+	right: 10px;
+	text-align: right;
+	box-shadow: -5px 10px 10px white;
+}
+
+#index-sub {
+	height: 45px;
+	position: fixed;
+	right: 0px;
+	width: 100%;
+	z-index: 2;
+}
+
+#menu a {
+	font-size: 22px;
+}
+
+#index-sub a {
+	position: relative;
+	padding-left: 20px;
+}
+
+.fa {
+	display: inline;
+	position: fixed;
+	right: 20px;
+	top: 17px;
+	z-index: 3;
+}
+
+#fabar {
+	height: 37px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#logo {
+	position: fixed;
+	left: 15px;
+	top: 12.5px;
+	height: 45px;
+	z-index: 3;
+}
+
+#sub {
+	position: relative;
+	top: 20px;
+	padding-top: 20px;
+	width: 100%;
+	height: 400px;
+	background-color: white;
+	border: 1px;
+	z-index: 2;
+	border-bottom: 1px solid;	
+  border-image-source: linear-gradient(-90deg, rgb(128, 128, 128), rgb(255, 255, 255));
+  border-image-slice: 1;
+}
+
+#sub a {
+	font-size: 18px;
+	display: inline-block;
+	padding-top: 30px;
+	padding-bottom: 10px;
+	width: 100%;
+	left: -10%;
+}
+
+/* INDEX MOBILE */
+
+.update {
+	display: none;
+}
+
+.carousel {
+	height: 385px;
+	background-color: #e7e7ef;
+}
+
+.issue .carousel {
+	height: 355px;
+	background-color: #e7e7ef;
+}
+
+.first {
+	padding-left: 95px!important;
+}
+
+.issue-2 .first {
+	padding-left: 55px!important;
+}
+
+.carousel img {
+	width: auto;
+	height: 285px;
+	padding-left: 3px;
+	padding-right: 4px;
+}
+
+.flickity-fullscreen-button, .flickity-button-icon, .flickity-prev-next-button {
+	display: none;
+	background-color: transparent;
+}
+
+.mobile-update {
+	display: block;
+	position: relative;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	height: 110px;
+	top: 0px;
+	background-color: #e7e7ef;
+}
+
+
+.issue .mobile-update {
+	padding: 0;
+	top: 00px;
+	height: 140px;
+		box-shadow: 0 0 10px 15px #e7e7ef;
+}
+
+.circle-1, .circle-2, .circle-3, .circle-4, .circle-5, .circle-6 {
+    top: 12%;
+    right: 3%;
+	position: absolute;
+	height: 170px;
+	width: 170px;
+}
+
+.container {
+	height: 100%;
+	width: auto;
+	left: 0px;
+	background-color: #e7e7ef;
+}
+
+.container-intro p {
+	font-family: 'IBM Plex Serif';
+	font-weight: 700;
+	font-size: 23px;
+	line-height: 1.5;
+}
+
+.container-intro a {
+	font-family: 'Raleway', sans-serif;
+	font-size: 15px;
+}
+
+.container img {
+	padding-bottom: 100px;
+}
+
+.index h2 {
+	font-size: 15px;
+}
+
+.index h1 {
+	font-size: 17px;
+}
+	
+}
+
+@media screen and (max-width: 915px) {
+	
+/* PRINTED ISSUES & OPEN CALL / ONE COLUMN */
+
+.call-box {
+	display: inline-block;
+	position: relative;
+	width: 100%;
+	left: 0%;
+	padding-top: 0px;
+	padding-bottom: 50px;
+}
+
+.call-box {
+	padding-bottom: 0px;
+}
+
+.call-box h2 {
+	font-size: 25px;
+}
+
+.call-box p {
+	font-size: 20px;
+}
+
+.call {
+	height: auto;
+	top: 50px;
+	padding-bottom: 50px;
+}
+
+.printed {
+	padding-bottom: 50px;
+}
+
+.printed-box {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.printed-box p {
+	padding: 20px;
+}
+
+.text {
+	top: 200px;
+	position: absolute;
+	width: 90%;
+	height: auto;
+	left: 5%;
+	overflow: hidden;
+	text-align: left;
+}
+
+.text h1 {
+	line-height: 1;
+	font-size: 50px;
+	font-family: 'Gotu Regular', sans-serif;
+	margin-top: 0px;
+}
+
+.text h2 {
+	font-family: 'Martel Sans', sans-serif;
+	font-size: 20px;
+	font-weight: 200;
+	line-height: 1;
+}
+
+.text h3 {
+	margin-top: -30px;
+	font-size: 30px;
+	font-family: 'Gotu Regular', sans-serif;
+}
+
+.text p {
+	margin-top: -10px;
+}
+
+.text a {
+	text-decoration: underline;
+}
+
+.circle-pdf, .circle-pdf-pink {
+	right: 15%;
+    width: 100px;
+    height: 100px; 
+	position: absolute;
+}
+
+.circle-pdf h1, .circle-pdf-pink h1 {
+	top: 19px;
+	left: 20px;
+	font-size: 17px;
+	font-family: 'Gotu Regular', sans-serif;
+	transform: rotate(10deg);
+}
+
+.issue-info {
+	display: block;
+	height: auto;
+	width: 90%;
+	position: relative;
+}
+
+.issue-info-content .content {
+	display: block;
+	height: auto;
+	width: 100%;
+	right: 0%;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	padding-bottom: 50px;
+}
+
+.about p {
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	width: 90%;
+	font-size: 20px;
+	padding-right: 5%;
+	padding-left: 5%;
+	line-height: 1.7;
+}
+
+.about text {
+	font-size: 18px;
+}
+
+.about a {
+	text-decoration: underline;
+}
+
+.shop .mail {
+	text-decoration: underline;
+}
+
+	
+}
+
+@media screen and (max-width: 720px) {
+
+/* MOBILE CONTENT / ONE COLUMN */
+
+.content {
+    top: 100px;
+	position: relative;
+	width: 100%;
+}
+
+.box {
+	position: relative;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0px;
+	padding-bottom: 40px;
+	height: auto;
+}
+
+.opencall {
+	padding-top: 40px;
+	width: 100%;
+	height: auto;
+	left: 0%;
+	filter: grayscale(0%);
+}
+
+.shop {
+    top: 125px;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	padding-bottom: 100px;
+}
+
+.shop-notice {
+	position: relative;
+	width: inherit;
+	text-align: center;
+	z-index: 1;
+	font-family: 'IBM Plex Serif';
+	font-weight: 300;
+	font-size: 19px;
+	line-height: 1.3;
+}
+
+.shop-box {
+	display: inline-table;
+	position: relative;
+	width: 49%;
+	opacity: 1;
+	text-decoration: none;
+	color: black;
+	text-align: center;
+}
+
+.shop-cover {
+	width: 70%;
+	height: auto;
+}
+
+
+.exceed h1 {
+	font-size: 30px!important;
+}
+
+#the-skin {
+	width: 100%;
+	font-size: 15.5px;
+}
+
+}
