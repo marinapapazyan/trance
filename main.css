@@ -149,6 +149,7 @@ footer {
 
 #logo {
 	position: fixed;
+	z-index: 2;
 	display: inline-block;
 	top: 5px;
 	left: 10px;
@@ -161,17 +162,16 @@ footer {
 	height: 57px;
 }
 
-/*
-
-#index-sub {
+#sub {
 	height: 32px;
+	top: 1px;
+	left: 75px;
 	position: fixed;
-	left: 0px;
-	width: 100%;
-	z-index: 2;
+	width: auto;
+	z-index: 1;
 }
 
-#index-sub a {
+#sub a {
 	position: relative;
 	top: 19px;
 	left: 270px;
@@ -179,7 +179,6 @@ footer {
 	display: inline-block;
 }
 
-*/
 
 .fa {
 	display: none;
