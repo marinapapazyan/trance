@@ -1070,8 +1070,9 @@ font-family: 'Gotu Regular', sans-serif;
 /* MOBILE MENU */
 
 #sub {
+	display: none;
 	position: fixed!important;
-	top: 200px!important;
+	top: 50px!important;
 	height: 400px!important;
 	width: 100%;
 	background-color: white;
