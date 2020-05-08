@@ -1088,7 +1088,7 @@ font-family: 'Gotu Regular', sans-serif;
 	right: 0px;
 	position: fixed!important;
 	width: 100%;
-	height: 100%!important;
+	height: 400px!important;
 	background-color: white;
 	border: 1px;
 	z-index: 3;
@@ -1110,7 +1110,6 @@ font-family: 'Gotu Regular', sans-serif;
 #menu {
 	top: 0px;
 	width: 105%;
-	height: auto;
 	min-height: 57px;
 	overflow: hidden;
 	position: fixed;
@@ -1124,6 +1123,10 @@ font-family: 'Gotu Regular', sans-serif;
 #index-sub a {
 	position: relative;
 	padding-left: 20px;
+}
+
+#bars {
+	z-index: 4;
 }
 
 .fa {
