@@ -1071,7 +1071,7 @@ font-family: 'Gotu Regular', sans-serif;
 
 #sub {
 	display: none;
-	position: fixed!important;
+	position: relative;
 	top: 50px!important;
 	height: 400px!important;
 	width: 100%;
