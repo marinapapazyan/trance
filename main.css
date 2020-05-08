@@ -132,10 +132,7 @@ footer {
 
 /* DESKTOP MENU */
 
-@media screen and (min-width: 1130px) {
-
 #menu {
-	height: 57px;
 	width: 102%;
 	overflow: hidden;
 	position: fixed;
@@ -159,6 +156,14 @@ footer {
 	height: 55px;
 }
 
+@media screen and (min-width: 1130px) {
+
+#menu {
+	height: 57px;
+}
+
+/*
+
 #index-sub {
 	height: 32px;
 	position: fixed;
@@ -174,6 +179,8 @@ footer {
 	padding-right: 30px;
 	display: inline-block;
 }
+
+*/
 
 .fa {
 	display: none;
@@ -1103,6 +1110,8 @@ font-family: 'Gotu Regular', sans-serif;
 #menu {
 	top: 0px;
 	width: 105%;
+	height: auto;
+	min-height: 57px;
 	overflow: hidden;
 	position: fixed;
 	background-color: white;
@@ -1110,10 +1119,6 @@ font-family: 'Gotu Regular', sans-serif;
 	right: 10px;
 	text-align: right;
 	box-shadow: -5px 10px 10px white;
-}
-
-#menu a {
-	font-size: 22px;
 }
 
 #index-sub a {
