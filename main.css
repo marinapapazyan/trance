@@ -1071,9 +1071,11 @@ font-family: 'Gotu Regular', sans-serif;
 
 #sub {
 	display: none;
-	position: relative;
-	top: 50px!important;
-	height: 400px!important;
+}
+	
+#sub {
+	padding-top: 50px;
+	position: fixed;
 	width: 100%;
 	background-color: white;
 	border: 1px;
@@ -1081,6 +1083,16 @@ font-family: 'Gotu Regular', sans-serif;
 	border-bottom: 1px solid;	
   border-image-source: linear-gradient(-90deg, rgb(128, 128, 128), rgb(255, 255, 255));
   border-image-slice: 1;
+}
+
+
+#sub a {
+	display: inline-block;
+	padding-top: 30px;
+	padding-right: 20px;
+	padding-bottom: 10px;
+	width: 90%;
+	font-size: 20px!important;
 }
 
 #menu {
@@ -1128,14 +1140,6 @@ a {
 	z-index: 3;
 }
 
-#sub a {
-	font-size: 18px;
-	display: inline-block;
-	padding-top: 30px;
-	padding-bottom: 10px;
-	width: 100%;
-	left: -10%;
-}
 
 /* INDEX MOBILE */
 
