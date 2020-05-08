@@ -134,7 +134,6 @@ footer {
 
 #menu {
 	width: 102%;
-	overflow: hidden;
 	position: fixed;
 	background-color: white;
     z-index: 1;
@@ -1111,7 +1110,6 @@ font-family: 'Gotu Regular', sans-serif;
 	top: 0px;
 	width: 105%;
 	min-height: 57px;
-	overflow: hidden;
 	position: fixed;
 	background-color: white;
     z-index: 2;
